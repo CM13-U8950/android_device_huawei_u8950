@@ -44,20 +44,18 @@ PRODUCT_COPY_FILES += \
 
 # Properties
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.confg.hw_appfsversion=u8950V5_1_SYSIMG \
-    ro.confg.hw_appsbootversion=u8950V5_1_APPSBOOT \
-    ro.confg.hw_appversion=u8950V5_1_KERNEL\
+    ro.confg.hw_appfsversion=u8950V6_0_SYSIMG \
+    ro.confg.hw_appsbootversion=u8950V6_0_APPSBOOT \
+    ro.confg.hw_appversion=u8950V6_0_KERNEL\
 
 PRODUCT_PROPERTY_OVERRIDES += \
     gsm.version.baseband=1040 \
-    rild.libpath=/system/lib/libril-qc-1.so \
-    ro.telephony.ril.config=qcomdsds,skippinpukcount,signalstrength \
-    ro.telephony.ril_class=HuaweiRIL
+    rild.libpath=/system/lib/libril-qc-1.so 
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full.mk)
 
-$(call inherit-product, frameworks/native/build/phone-hdpi-512-dalvik-heap.mk)
+#$(call inherit-product, frameworks/native/build/phone-hdpi-512-dalvik-heap.mk)
 
-$(call inherit-product-if-exists, hardware/broadcom/wlan/bcmdhd/firmware/bcm4330/device-bcm.mk)
+$(call inherit-product, hardware/broadcom/wlan/bcmdhd/firmware/bcm4330/device-bcm.mk)
 
-$(call inherit-product-if-exists, vendor/huawei/u8950/u8950-vendor.mk)
+$(call inherit-product, vendor/huawei/u8950/u8950-vendor.mk)

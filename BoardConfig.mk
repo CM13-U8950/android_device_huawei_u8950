@@ -43,7 +43,7 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 1207943168 # 0x47FFC000
 # Recovery
 #BOARD_CUSTOM_GRAPHICS := ../../../device/huawei/u8950/recovery/graphics.c
 TARGET_RECOVERY_FSTAB := device/huawei/u8950/rootdir/fstab.huawei
-
+BLOCK_BASED_OTA := false
 # Wi-Fi
 BOARD_WPA_SUPPLICANT_DRIVER := NL80211
 BOARD_HOSTAPD_DRIVER := NL80211
@@ -52,8 +52,9 @@ BOARD_WLAN_DEVICE := bcmdhd
 BOARD_HOSTAPD_PRIVATE_LIB := lib_driver_cmd_$(BOARD_WLAN_DEVICE)
 BOARD_WPA_SUPPLICANT_PRIVATE_LIB := lib_driver_cmd_$(BOARD_WLAN_DEVICE)
 WIFI_DRIVER_FW_PATH_AP := "/vendor/firmware/fw_bcmdhd_apsta.bin"
-WIFI_DRIVER_FW_PATH_STA := "/vendor/firmware/fw_bcmdhd_apsta.bin"
+WIFI_DRIVER_FW_PATH_STA := "/vendor/firmware/fw_bcmdhd.bin"
 WIFI_DRIVER_FW_PATH_P2P := "/vendor/firmware/fw_bcmdhd_apsta.bin"
+WIFI_BAND := 802_11_BG
 WIFI_DRIVER_FW_PATH_PARAM := "/sys/module/dhd/parameters/firmware_path"
 WIFI_DRIVER_MODULE_ARG := "firmware_path=${WIFI_DRIVER_FW_PATH_STA} nvram_path=/system/etc/nvram_4330.txt"
 WIFI_DRIVER_MODULE_NAME := "dhd"

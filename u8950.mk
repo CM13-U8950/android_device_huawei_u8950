@@ -55,7 +55,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	gsm.version.baseband=1040 \
 	rild.libpath=/system/lib/libril-qc-1.so
 
-PRODUCT_PACKAGES += KernelAdiutor RootExplorer
+#PRODUCT_PACKAGES += KernelAdiutor RootExplorer
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full.mk)
 

@@ -16,9 +16,12 @@
 
 # Inherit some common CM stuff
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
+x
+# Inherit from those products. Most specific first.
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit device configuration
-$(call inherit-product, device/huawei/u8950/full_u8950.mk)
+# Inherit from u8950 device
+$(call inherit-product, device/huawei/u8950/u8950.mk)
 
 # Correct boot animation size for the screen
 TARGET_SCREEN_HEIGHT := 960
@@ -27,3 +30,6 @@ TARGET_SCREEN_WIDTH := 540
 # Device name
 PRODUCT_NAME := cm_u8950
 PRODUCT_DEVICE := u8950
+PRODUCT_BRAND := Honor
+PRODUCT_MANUFACTURER := HUAWEI
+PRODUCT_MODEL := Ascend G600

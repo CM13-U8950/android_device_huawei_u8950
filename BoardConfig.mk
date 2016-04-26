@@ -34,7 +34,6 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/huawei/u8950/bluetooth
 BOARD_HAVE_BLUETOOTH_BCM := true
 
 # Kernel
-#TARGET_KERNEL_CUSTOM_TOOLCHAIN := ../UBERTC/out/arm-eabi-5.3-cortex-a5/bin/arm-eabi-
 TARGET_KERNEL_CONFIG := G600_defconfig
 
 # Partitions
@@ -42,7 +41,6 @@ BOARD_SYSTEMIMAGE_PARTITION_SIZE := 1073741824 # 0x40000000
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 1207943168 # 0x47FFC000
 
 # Recovery
-#BOARD_CUSTOM_GRAPHICS := ../../../device/huawei/u8950/recovery/graphics.c
 TARGET_RECOVERY_FSTAB := device/huawei/u8950/rootdir/fstab.huawei
 BLOCK_BASED_OTA := false
 # Wi-Fi

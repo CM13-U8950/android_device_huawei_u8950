@@ -14,5 +14,4 @@
 # limitations under the License.
 #
 
-PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/full_u8950.mk
+PRODUCT_MAKEFILES := $(LOCAL_DIR)/u8950.mk

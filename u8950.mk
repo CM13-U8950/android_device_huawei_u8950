@@ -41,6 +41,7 @@ PRODUCT_COPY_FILES += \
 	device/huawei/u8950/keylayout/AVRCP.kl:system/usr/keylayout/AVRCP.kl \
 	device/huawei/u8950/keylayout/ft5x06_ts.kl:system/usr/keylayout/ft5x06_ts.kl \
 	device/huawei/u8950/keylayout/Generic.kl:system/usr/keylayout/Generic.kl
+	device/huawei/u8950/configs/gps.conf:system/etc/gps.conf
 
 # Properties
 VERS := u8950V$(shell echo $(PLATFORM_VERSION) | sed 's/\./_/g')

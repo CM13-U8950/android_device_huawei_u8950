@@ -20,6 +20,7 @@ DEVICE_PACKAGE_OVERLAYS += device/huawei/u8950/overlay
 
 PRODUCT_COPY_FILES += \
 	device/huawei/u8950/rootdir/fstab.huawei:root/fstab.huawei \
+	device/huawei/u8950/rootdir/fstab.huawei.switched:root/fstab.huawei.switched \
 	device/huawei/u8950/rootdir/init.device.rc:root/init.device.rc \
 	device/huawei/u8950/rootdir/1191601.img:root/tp/1191601.img
 

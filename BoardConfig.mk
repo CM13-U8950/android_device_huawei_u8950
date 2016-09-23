@@ -35,7 +35,6 @@ BOARD_HAVE_BLUETOOTH_BCM := true
 
 # Kernel
 TARGET_KERNEL_CONFIG := G600_defconfig
-TARGET_KERNEL_CROSS_COMPILE_PREFIX := /home/ksrt12/1TB/UBERTC/out/arm-linux-androideabi-4.9-cortex-a5/bin/arm-linux-androideabi-
 
 # Partitions
 BOARD_SYSTEMIMAGE_PARTITION_SIZE := 1073741824 # 0x40000000
